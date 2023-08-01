@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="profile_circle.png" />
+    <link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet">
+    <title>To Do List App - Javascript | Tran Dinh Thang</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="onLoad()">
+    <div class="app">
+        <div class="header">
+            <h2>To Do List - Javascript</h2>
+            <div class="input">
+                <input onkeydown="onkeydownInput(event)" id="toDoInput" type="text" placeholder="Title..." />
+                <span onclick="clickAddToDo()" id="addToDo" class="addBtn">Add</span>
+            </div>
+        </div>
+        <div class="body">
+            <ul id="toDoList">
+
+            </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
